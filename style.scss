@@ -1,0 +1,127 @@
+body {
+  background-color: #2a2522;
+}
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+h1 {
+  font-family: Lato;
+  color: #f97848;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.bank {
+  text-transform: uppercase;
+  font-family: Lato;
+  border: 3px solid #f97848;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 350px;
+  padding-right: 0rem;
+}
+
+.drum-0 button {
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25),
+    -3px -3px 8px 0 rgba(255, 255, 255, 0.3);
+}
+.drum-1 button {
+  box-shadow: 0px 6px 8px 0 rgba(0, 0, 0, 0.25),
+    0px -3px 3px 0 rgba(255, 255, 255, 0.3);
+}
+.drum-2 button {
+  box-shadow: -6px 6px 8px 0 rgba(0, 0, 0, 0.25),
+    3px -3px 6px 0 rgba(255, 255, 255, 0.3);
+}
+.drum-3 button {
+  box-shadow: 6px 0px 8px 0 rgba(0, 0, 0, 0.25),
+    -3px 0px 8px 0 rgba(255, 255, 255, 0.3);
+}
+.drum-4 button {
+  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.25),
+    0px 0px 3px 0 rgba(255, 255, 255, 0.3);
+}
+.drum-5 button {
+  box-shadow: -6px 0px 8px 0 rgba(0, 0, 0, 0.25),
+    3px 0px 6px 0 rgba(255, 255, 255, 0.3);
+}
+.drum-6 button {
+  box-shadow: 6px -6px 8px 0 rgba(0, 0, 0, 0.25),
+    -3px 3px 8px 0 rgba(255, 255, 255, 0.3);
+}
+.drum-7 button {
+  box-shadow: 0px -6px 8px 0 rgba(0, 0, 0, 0.25),
+    0px 3px 3px 0 rgba(255, 255, 255, 0.3);
+}
+.drum-8 button {
+  box-shadow: -6px -6px 8px 0 rgba(0, 0, 0, 0.25),
+    3px 3px 6px 0 rgba(255, 255, 255, 0.3);
+}
+
+.drum-pad {
+  padding-right: 1rem;
+  text-align: center;
+  color: #f97848;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+
+  .pressed {
+    background-color: #f97848;
+  }
+
+  button {
+    background-color: #2a2522;
+    width: 100px;
+    height: 100px;
+    border: 0px solid black;
+    border-radius: 20px;
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+    transition: all 0.2s ease-out;
+    &:active {
+      background-color: #f97848;
+    }
+  }
+}
+.drum-pad:nth-of-type(3n),
+.drum-pad:nth-of-type(6n),
+.drum-pad:nth-of-type(9n) {
+  padding-right: 0rem;
+}
+
+.separator {
+  margin-top: 1rem;
+  font-family: Lato;
+  color: #f97848;
+  letter-spacing: 9px;
+  width: 340px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 3px solid #f97848;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+h1,
+p {
+  font-family: Lato;
+}
